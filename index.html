@@ -4,28 +4,50 @@
 <title>Mana lapa</title>
 <style>
     table, th, td {
-        border: 1px solid black
+        border: 1px solid black;
+        border-collapse: collapse;
     }
+    th, td {
+        padding: 5px;
+        text-align: center;
+    }
+        tr:nth-child(even) {
+            background-color: orange;
+        }
+        tr:nth-child(odd) {
+            background-color: gray;
+        }
+        th {
+            background-color: black;
+            color:white;
+        }
 </style>
     </head>
-    <body>
-        <h1><b>Virsraksts</b></h1>
-        <h2>Vēlviens virsraksts</h2>
-        <img src ="playboi_carti.jpg" alt="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBMZXS3rSs8irehkpnD3dJbS2GBK4cRDV7Lg&usqp=CAU" width="200" height="150">
-        <p>Gudrs teksts vai kkas tamlīdzīgs.</p>
+    <body style="background-color: lightseagreen;">
+        <h1 style="font-family: 'Courier New', Courier, monospace;"><b>Virsraksts</b></h1>
+        <hr>
+        <h2 style="color: bisque;">Vēlviens virsraksts</h2>
+        <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBMZXS3rSs8irehkpnD3dJbS2GBK4cRDV7Lg&usqp=CAU" alt="" width="300" height="250">
+        <p style="color: floralwhite;">Gudrs teksts vai kkas <span style="border: 1px solid black">tamlīdzīgs</span>, man īsti neintresē.</p>
         <a href="https://www.rag.lv/">RAĢ mājaslapa</a>
 
-<h3>Vajadzīgās lietas veikalā</h3>
+<h3 style="font-size: xx-large;">Vajadzīgās lietas veikalā</h3>
 
-        <ol>
+        <ol style="font-size: larger;">
             <li>Maize</li>
             <li>Tēja</li>
+                <ul>
+                    <li>Kumelīšu</li>
+                    <li>Melnā</li>
+                    <li>Zaļā</li>
+                </ul>
             <li>Olas</li>
             <li>Piens</li>
             <li>Kartupeļi</li>
         </ol>
 
-<table style="width:75%">
+<table style="width:60%">
+    <caption><b>Random cilvēki</b></caption>
 <tr>
     <th>Vārds</th>
     <th>Uzvārds</th>
