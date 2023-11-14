@@ -10,7 +10,43 @@
 
 <title>Mana lapa</title>
 <link rel="icon" type="images/x-icon" href="favicon.ico">
+
+<script>
+    function raditSaturu(){
+        document.getElementById("RadamaisSaturs").style.display="block"
+    }
+
+    function pasleptSaturu(){
+        document.getElementById("RadamaisSaturs").style.display="none"
+    }
+
+    function showKakis(){
+        document.getElementById("Kakis").style.display="none"
+        document.getElementById("KakisRadit").style.display="block"
+        document.getElementById("Kakis1").style.display="block"
+    }
+
+    function hideKakis(){
+        document.getElementById("Kakis").style.display="block"
+        document.getElementById("Kakis1").style.display="none"
+        document.getElementById("KakisRadit").style.display="none"
+    }
+
+</script>
+
 <style>
+
+    #Kakis1 {
+        display: none;
+    }
+
+    #KakisRadit {
+        display: none;
+    }
+
+    #RadamaisSaturs {
+        display: none;
+    }
 
     .header{
         background-color: rgba(90, 34, 139, 1);
@@ -137,6 +173,12 @@ margin: 0;
             </div>  
             <div class="col-9">
         <p class="one" style="color: floralwhite;">Gudrs teksts vai kkas <span style="border: 1px solid black">tamlīdzīgs</span>, man īsti neintresē.  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p class="one">
+            <button id="PogaRadit" onclick="raditSaturu()">Rādīt vairāk</button>
+            <div id="RadamaisSaturs">
+            <p class="one" style="color: floralwhite;">nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas </p>
+            <button onclick="pasleptSaturu()">Rādīt mazāk</button>
+            </div>
+            <p class="one" style="color: floralwhite;">Pēc satura</p>
             </div>
                 </div>
             </div>
@@ -144,18 +186,21 @@ margin: 0;
 <br>
             <div class="container text-center">
                 <div class="row align-items-center">
-                    <div class="col">
+                    <div class="col-4">
         <a href="https://www.youtube.com/" target="_blank"><img src ="https://www.youtube.com/img/desktop/yt_1200.png" style="width: 100px; height: 100px; align-items: center;" class="pic"></a>
                     </div>
-                    <div class="col">
+                    <div class="col-4">
         <a href="https://www.rag.lv/" target="_blank" style="text-decoration: none;">RAĢ mājaslapa</a>
                     </div>
-                    <div class="col">
-        <button>Šī poga nestrādā</button>
+                    <div class="col-4">
+        <button id="Kakis" onclick="showKakis()">Kaķis</button>
+        <button id="Kakis1" onclick="hideKakis()">Nogalināt kaķi</button>
                     </div>
                 </div>
             </div>
-        
+        <div id="KakisRadit" class="container text-center">
+<img src="cat.png" width="300" height="200">
+            </div>
 
 
         <div class="dimants">
