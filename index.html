@@ -12,12 +12,19 @@
 <link rel="icon" type="images/x-icon" href="favicon.ico">
 
 <script>
+
+    function Mainit(){
+        document.getElementById("Change").innerHTML = "Zivis vairs nedzīvo ūdenī."
+    }
+
     function raditSaturu(){
         document.getElementById("RadamaisSaturs").style.display="block"
+        document.getElementById("PogaRadit").style.display="none"
     }
 
     function pasleptSaturu(){
         document.getElementById("RadamaisSaturs").style.display="none"
+        document.getElementById("PogaRadit").style.display="block"
     }
 
     function showKakis(){
@@ -88,11 +95,9 @@
     .pic {
         width: 300px;
         height: 200px;
-        padding: 10px;
     }
 
     .pic1 {
-       padding: 10px;
        object-fit: cover;
     }
 
@@ -176,7 +181,7 @@
                 
         </div>
         <div class="col-9">
-            <h2 style="color: bisque;">Pa kreisi ir bilde un apakša ir teksts</h2>
+            <h2 style="color: bisque;">Vēlviens Virsraksts</h2>
         
                     </div>
                         
@@ -189,10 +194,10 @@
             </div>  
             <div class="col-9">
         <p class="one" style="color: floralwhite;">Gudrs teksts vai kkas <span style="border: 1px solid black">tamlīdzīgs</span>, man īsti neintresē.  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p class="one">
-            <button id="PogaRadit" onclick="raditSaturu()">Rādīt vairāk</button>
+            <button type="button" class="btn btn-light" id="PogaRadit" onclick="raditSaturu()">Rādīt vairāk</button>
             <div id="RadamaisSaturs">
             <p class="one" style="color: floralwhite;">nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas nav idejas </p>
-            <button onclick="pasleptSaturu()">Rādīt mazāk</button>
+            <button type="button" class="btn btn-light" onclick="pasleptSaturu()">Rādīt mazāk</button>
             </div>
             <p class="one" style="color: floralwhite;">Pēc satura</p>
             </div>
@@ -209,8 +214,8 @@
         <a href="https://www.rag.lv/" target="_blank" style="text-decoration: none;">RAĢ mājaslapa</a>
                     </div>
                     <div class="col-4">
-        <button id="Kakis" onclick="showKakis()">Kaķis</button>
-        <button id="Kakis1" onclick="hideKakis()">Nogalināt kaķi</button>
+        <button type="button" class="btn btn-light" id="Kakis" onclick="showKakis()">Kaķis</button>
+        <button type="button" class="btn btn-light" id="Kakis1" onclick="hideKakis()">Nogalināt kaķi</button>
                     </div>
                 </div>
             </div>
@@ -220,8 +225,9 @@
     
 
         <div class="dimants">
+            <button onclick="Mainit()" type="button" class="btn btn-light">Izmaiņa</button>
             <h4>Zivis</h4>
-            <p>Zivis dzīvo ūdenī</p>
+            <p id="Change">Zivis dzīvo ūdenī</p>
         </div>
 
         
