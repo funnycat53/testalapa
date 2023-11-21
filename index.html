@@ -32,22 +32,7 @@
         document.getElementById("KakisRadit").style.display="none"
     }
 
-    function move() {
-  let id = null;
-  const elem = document.getElementById("animate");   
-  let pos = 0;
-  clearInterval(id);
-  id = setInterval(frame, 5);
-  function frame() {
-    if (pos == 350) {
-      clearInterval(id);
-    } else {
-      pos++; 
-      elem.style.top = pos + "px"; 
-      elem.style.left = pos + "px"; 
-    }
-  }
-}
+   
 
 </script>
 
@@ -238,14 +223,7 @@ margin: 0;
         <div id="KakisRadit" class="container text-center">
 <img src="cat.png" width="300" height="200">
             </div>
-    <div class="row align-items-center">
-            <button class="button" onclick="move()">Nospied</button>
-    </div>
-    <div class="row align-items-center">
-            <div id="square">
-                <div id="animate"></div>
-            </div>
-    </div>
+    
 
         <div class="dimants">
             <h4>Zivis</h4>
